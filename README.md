@@ -3,7 +3,9 @@
 
 国内最丝滑的肿瘤NGS Panel一键化分析流程（800+基因） 从fastq到中美双指南临床报告，全程自动化，30分钟出结果
 
-## 一行命令搞定一切（上线后） ```bash docker run -v $(pwd):/data hqd/onco-panel:latest -i *_R1.fastq.gz -o result/
+## 一行命令搞定一切（上线后） 
+```bash
+docker run -v $(pwd):/data hqd/onco-panel:latest -i *_R1.fastq.gz -o result/
 当前已完成
 fastp + cutadapt 自动质控去接头  
 bwa-mem2 超快比对  
